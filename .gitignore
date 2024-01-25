@@ -1,0 +1,5 @@
+# Flask stuff
+instance/
+
+# Virtual environment stuff
+venv/
