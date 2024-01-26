@@ -8,7 +8,7 @@ Before running the app, make sure you have the following installed:
 
 - Python 3.x
 - Flask
-- Venv
+- venv
 - FlaskSQLAlchemy
 
 ## Installation
@@ -25,7 +25,23 @@ Before running the app, make sure you have the following installed:
     cd flask-todo-app
     ```
 
-3. Install the dependencies:
+3. Create a virtual environment:
+    ```bash
+    python3 -m venv venv
+    ```
+
+4. Start the virtual environment:
+    On Windows:
+    ```bash
+    .\venv\Scripts\activate
+    ```
+
+    On Mac/Linux:
+    ```bash
+    . venv/bin/activate
+    ```
+
+5. Install the dependencies:
 
     ```bash
     pip install -r requirements.txt
