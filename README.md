@@ -31,6 +31,7 @@ Before running the app, make sure you have the following installed:
     ```
 
 4. Start the virtual environment:
+
     On Windows:
     ```bash
     .\venv\Scripts\activate
