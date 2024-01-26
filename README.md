@@ -33,12 +33,17 @@ Before running the app, make sure you have the following installed:
 
 ## Usage
 
-1. Start the Flask development server:
+1. Start the virtual environment:
+    ```bash
+    . venv/bin/activate
+    ```
+
+2. Start the Flask development server:
 
     ```bash
     flask run
     ```
 
-2. Open your web browser and go to `http://localhost:5000`.
+3. Open your web browser and go to `http://localhost:5000`.
 
-3. You will see the todo app interface. You can add, complete, and delete tasks.
+4. You will see the todo app interface. You can add, complete, and delete tasks.
