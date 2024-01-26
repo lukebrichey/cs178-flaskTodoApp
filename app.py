@@ -6,6 +6,7 @@ app = Flask(__name__)
 # Configure the database
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+# Example of Flask extension
 db = SQLAlchemy(app)
 
 class Todo(db.Model):
@@ -13,12 +14,14 @@ class Todo(db.Model):
     title = db.Column(db.String(100))
     complete = db.Column(db.Boolean)
 
+# Template rendering and passing data to templates
 @app.route("/")
 def home():
     todo_list = Todo.query.all()
     return render_template("base.html", todo_list=todo_list)
 
-@app.route("/add", methods=["POST"])
+# URL to Python function mapping (Route handling)
+@app.post("/add")
 def add():
     title = request.form.get("title")
     new_todo = Todo(title=title, complete=False)
